@@ -18,7 +18,9 @@ public class waveprint {
                     System.out.print(arr[row][col]+",");
                     
                 }
+                /*
                 
+                */
             }
             System.out.println("");
             
