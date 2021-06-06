@@ -10,6 +10,8 @@ public class pattern1 {
         int nst=n;
         int nsp=-1;
         //rows
+
+        
         for (int row = 1; row <=nrows; row++) {
             //first stars
             int digit=1;
