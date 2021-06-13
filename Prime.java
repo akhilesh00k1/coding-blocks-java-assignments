@@ -9,6 +9,9 @@ public class Prime {
     }
 
     public static String isprime(int number) {
+        if(number==1){
+            return "Not Prime";
+        }
         for(int i=2;i<=(int)Math.pow(number,0.5);i++){
             if(number%i==0){
             return "Not Prime";
