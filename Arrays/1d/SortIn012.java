@@ -5,13 +5,15 @@ import java.util.Scanner;
 public class SortIn012 {
     public static void main(String[] args){
         Scanner scan=new Scanner(System.in);
-        int N=scan.nextInt();
-        int[] arr=new int[N];
-        for (int i = 0; i <=N-1 ; i++) {
+        int n=scan.nextInt();
+        int[] arr=new int[n];
+        for (int i = 0; i <=n-1 ; i++) {
             arr[i]=scan.nextInt();
             
         }
         sort(arr);
+        System.out.println("");
+        System.out.println("");
         for (int i : arr) {
             System.out.println(i);
             
@@ -22,7 +24,7 @@ public class SortIn012 {
         int zerocounter=0;
         int traverser=0;
         int twocounter=arr.length-1;
-        while(traverser<=zerocounter){
+        while(traverser<=twocounter){
             if(arr[traverser]==0){
                 swap(arr,traverser,zerocounter);
                 zerocounter++;
@@ -34,6 +36,7 @@ public class SortIn012 {
             else{
                 swap(arr,traverser,twocounter);
                 twocounter--;
+               
             }
         }
 
