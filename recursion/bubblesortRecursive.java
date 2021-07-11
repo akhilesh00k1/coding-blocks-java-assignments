@@ -12,10 +12,14 @@ public class bubblesortRecursive {
         if(si==arr.length-1){
             return;     
         }
+        if(si==li){
+            bubblerecur(arr, 0, li);
+        }
         if(arr[si]>arr[si+1]){
             int temp=arr[si];
             arr[si]=arr[si+1];
             arr[si+1]=temp;
+            
         }
         bubblerecur(arr,si+1,li);
 
